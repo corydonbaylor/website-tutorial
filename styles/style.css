@@ -3,3 +3,10 @@
     color:#2F4F4F;
 }
 
+.examples {
+    background-color: #6699cc;
+    color: white;
+    border-radius: 5px;
+    height: 100px;
+    min-width: 200px;
+}
