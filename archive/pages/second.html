@@ -1,8 +1,7 @@
-{% block head %}
+<html>
 
 <head>
-
-    <title>Example</title>
+    <title>Second Page</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- jQuery library -->
@@ -13,24 +12,25 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <!-- Our CSS -->
-    <link rel="stylesheet" href="{{url_for('.static', filename='style.css')}}">
-
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
-{% endblock %}
 
 <body class="page-style">
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+                <a class="nav-link" href="../index.html">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ url_for('second') }}">Second Page</a>
+                <a class="nav-link" href="second.html">Second Page</a>
             </li>
         </ul>
     </nav>
+    <br>
     <div class="container">
-        {% block content %}
-        {% endblock %}
+        <h2>Now you have two pages!</h2>
+        <p>Isn't that nice</p>
     </div>
 </body>
+
+</html>
